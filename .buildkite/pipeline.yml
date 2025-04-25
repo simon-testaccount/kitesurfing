@@ -1,0 +1,10 @@
+# This file is never read -- it's just a copy of the pipeline's
+# configuration in the Buildkite UI.
+
+steps:
+  - name: ":pipeline: rails-initial-pipeline"
+    command: |
+      PATH=/bin:/usr/bin
+      set -e
+      echo "Hello, world!"
+    timeout_in_minutes: 5
