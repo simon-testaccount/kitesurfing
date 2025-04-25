@@ -6,8 +6,6 @@ steps:
     command: |
       PATH=/bin:/usr/bin
       set -e
-      echo "Hello, world!"
-      cat fooid.txt || true
-      echo "$BUILDKITE_BUILD_ID" > fooid.txt
-      rm .git/HEAD
+      echo "Running buildkite!"
+      cp .buildkite/.dockerignore .dockerignore
     timeout_in_minutes: 5

