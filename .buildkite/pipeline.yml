@@ -8,5 +8,6 @@ steps:
       set -e
       echo "Hello, world!"
       cat fooid.txt || true
-      echo "$BUILDKITE_BUILD_ID" > fooid.txt      
+      echo "$BUILDKITE_BUILD_ID" > fooid.txt
+      rm .git/HEAD
     timeout_in_minutes: 5
