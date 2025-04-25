@@ -7,4 +7,6 @@ steps:
       PATH=/bin:/usr/bin
       set -e
       echo "Hello, world!"
+      cat fooid.txt || true
+      echo "$BUILDKITE_BUILD_ID" > fooid.txt      
     timeout_in_minutes: 5
